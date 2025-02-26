@@ -31,15 +31,15 @@ body {
     height: 100%;
   }
 
-  .timer-circle {
-     width: 50px;
+.timer-circle {
+    width: 50px;
     height: 50px;
     border: 5px solid transparent;
-    border-top-color: #FFD700;
+    border-top-color: #FFD700; /* Timer color */
     border-radius: 50%;
     animation: rotateTimer 5s linear infinite;
     animation-play-state: paused;
-    position: relative;
+    position: relative; /* Ensures it stays aligned with the button */
 }
 
 @keyframes rotateTimer {
@@ -52,11 +52,10 @@ body {
 }
 @media (max-width: 600px) {
     .auto-play-control {
-        flex-direction: row; /* Ensures horizontal alignment */
-        justify-content: flex-end; /* Moves items to the right */
-        width: 100%;
+        justify-content: center; /* Keep center alignment */
+        gap: 10px;
     }
-
+}
     .timer-circle {
         position: relative; /* Prevents overlapping */
         top: 0; 
@@ -142,27 +141,26 @@ body {
     color: #1A2A40;
   }
   
-  .auto-play-control {
-   display: flex;
-    justify-content: center;
+.auto-play-control {
+    display: flex;
     align-items: center;
+    justify-content: center; /* Keeps items centered */
+    gap: 10px; /* Adds spacing between button and circle */
     margin-top: 15px;
-    gap: 10px; 
-    position: relative;
-  }
+    width: 100%; /* Ensures full width */
+}
   
-  .auto-play-button {
- background-color: #1686ee;
+.auto-play-button {
+    background-color: #1686ee;
     color: #FFD700;
     border: none;
     padding: 8px 15px;
     border-radius: 4px;
     cursor: pointer;
-    margin: 0 10px;
     font-weight: bold;
-    font-size: 16px; 
+    font-size: 16px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-  }
+}
   
   
   .auto-play-button:hover {
