@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f9fc;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .task-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .task-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+  }
+
+  
+  .add-button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+
+  }
+
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px 15px;
+    background-color: rgb(245, 237, 237);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .task-item span {
+    flex-grow: 1; 
+    font-size: 20px;
+  }
+  
+  
+  .task-check {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+   
+  }
+  .task-check:checked {
+   
+    accent-color: green; 
+}
+  
+  .delete-btn {
+    background-color: #d02815;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0px 0px 2px 2px ;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    opacity: 0.8;
+    
+    transition: opacity 0.2s;
+  }
+  
+  .delete-btn:hover {
+    opacity: 1;
+  }
+  
+  .empty-list {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    padding: 20px;
+  }
+  
+  .task-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #7f8c8d;
+    font-size: 14px;
+  }
+  
