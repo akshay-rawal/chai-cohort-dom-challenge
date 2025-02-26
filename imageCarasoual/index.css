@@ -32,16 +32,14 @@ body {
   }
 
   .timer-circle {
-    width: 50px;
+     width: 50px;
     height: 50px;
     border: 5px solid transparent;
-    border-top-color: #FFD700; /* Timer color */
+    border-top-color: #FFD700;
     border-radius: 50%;
-    position: absolute;
-    top: 40px;
-    right: 10em;
     animation: rotateTimer 5s linear infinite;
-    animation-play-state: paused; 
+    animation-play-state: paused;
+    position: relative;
 }
 
 @keyframes rotateTimer {
@@ -50,6 +48,19 @@ body {
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+@media (max-width: 600px) {
+    .auto-play-control {
+        flex-direction: row; /* Ensures horizontal alignment */
+        justify-content: flex-end; /* Moves items to the right */
+        width: 100%;
+    }
+
+    .timer-circle {
+        position: relative; /* Prevents overlapping */
+        top: 0; 
+        right: 0;
     }
 }
 
@@ -132,14 +143,16 @@ body {
   }
   
   .auto-play-control {
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+    gap: 10px; 
+    position: relative;
   }
   
   .auto-play-button {
-    background-color: #1686ee;
+ background-color: #1686ee;
     color: #FFD700;
     border: none;
     padding: 8px 15px;
@@ -147,9 +160,8 @@ body {
     cursor: pointer;
     margin: 0 10px;
     font-weight: bold;
-    font-size: ;
+    font-size: 16px; 
     transition: background-color 0.3s ease, transform 0.2s ease;
-  
   }
   
   
