@@ -40,6 +40,10 @@ body {
     animation: rotateTimer 5s linear infinite;
     animation-play-state: paused;
     position: relative; /* Ensures it stays aligned with the button */
+     position: relative; /* Prevents overlapping */
+        top: 0; 
+        right: 0;
+    }
 }
 
 @keyframes rotateTimer {
@@ -56,13 +60,6 @@ body {
         gap: 10px;
     }
 }
-    .timer-circle {
-        position: relative; /* Prevents overlapping */
-        top: 0; 
-        right: 0;
-    }
-}
-
 
   .carousel-indicator {
     display: flex; /* Ensures dots are aligned properly */
