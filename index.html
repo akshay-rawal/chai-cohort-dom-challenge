@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Rawal Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Ensures consistent sizing */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px; /* Fixed missing semicolon */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .links a {
+            text-decoration: none;
+            color: white;
+            background-color: #3498db;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            display: inline-block; /* Ensures proper spacing */
+        }
+        .links a:hover {
+            background-color: #2980b9;
+        }
+        iframe {
+            width: 100%;
+            max-width: 800px; /* Ensures it doesn’t get too wide */
+            height: 600px;
+            border: 2px solid #ccc;
+            margin-top: 20px;
+            border-radius: 5px;
+            background: white; /* Ensures visibility before content loads */
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM Challenge Projects by Akshay Rawal</h1>
+    <div class="container">
+        <div class="links">
+            <a href="#" onclick="loadProject('changeColor/index.html')">Change Color</a>
+            <a href="#" onclick="loadProject('formDisplay/index.html')">Form Display</a>
+            <a href="#" onclick="loadProject('imageCarasoual/index.html')">Image Carousel</a>
+            <a href="#" onclick="loadProject('lightToggle/index.html')">Light Toggle</a>
+            <a href="#" onclick="loadProject('real-time-form-input/index.html')">Real-time Form Input</a>
+        </div>
+        <iframe id="projectFrame"></iframe>
+    </div>
+    <script>
+        function loadProject(projectPath) {
+            const frame = document.getElementById('projectFrame');
+            frame.src = projectPath;
+        }
+    </script>
+</body>
+</html>
