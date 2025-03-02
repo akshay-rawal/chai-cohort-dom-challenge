@@ -29,8 +29,10 @@ body {
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 8px;
-    max-width: 100%; 
+    width: 100%;
     margin: auto;
+    box-sizing: border-box;
+    overflow-x: auto;
   }
   
   .cart-item {
@@ -48,7 +50,7 @@ body {
     gap: 10px;
     justify-content: flex-end;
     flex: 1;
-    max-width: 400px;
+    max-width: 100%;
     overflow: hidden;
     white-space: nowrap;
   }
@@ -76,6 +78,11 @@ body {
     .product img {
         max-width: 120px; 
     }
+    .cart{
+      width: 100%;
+      padding: 10px;
+      overflow-x: auto;
+    }
 
     .cart-item {
         flex-direction: column; 
@@ -85,7 +92,6 @@ body {
     .cartItemDetails {
         justify-content: center;
         max-width: 100%;
-        text-align: center;
         white-space: normal;
     }
 }
