@@ -13,8 +13,8 @@ function updateClock() {
 
   //for clock hand
   const secondHand = seconds * 6;
-  const minuteHand = (minutes + seconds / 60) * 6;
-  const hourHand = ((now.getHours() % 12) + minutes / 60) * 30;
+  const minuteHand = (minutes * 6) + (seconds / 10);
+  const hourHand = ((now.getHours() % 12) * 30) + (minutes / 2);
 
   document.querySelector(".second" ).style.transform = `rotate(${secondHand}deg)`;
   document.querySelector( ".minute").style.transform = `rotate(${minuteHand}deg)`;
