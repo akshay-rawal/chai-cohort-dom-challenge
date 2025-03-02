@@ -40,6 +40,7 @@ body {
     gap: 10px; 
     padding: 15px;
     border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
   }
   .cartItemDetails {
     display: flex;
@@ -61,4 +62,27 @@ body {
     padding: 20px;
     display: none;
   }
+  @media (max-width: 768px) {
+    body {
+        padding: 10px; 
+    }
+
+    .products {
+        grid-template-columns: 1fr; 
+    }
+
+    .product img {
+        max-width: 120px; 
+    }
+
+    .cart-item {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .cartItemDetails {
+        justify-content: center;
+        max-width: 100%;
+    }
+}
   

@@ -80,5 +80,8 @@
     button::after{
         background-color: #498d4b;
     }
-
+    button:active {
+        background: #388e3c; 
+        transform: scale(0.95); 
+    }
     

@@ -6,8 +6,8 @@ body {
   .panel {
     position: fixed;
     top: 0;
-    right: -360px;
-    width: 300px;
+    right: -100%;
+    width: 25vw;
     height: 100%;
     background: #333;
     color: white;
@@ -69,4 +69,16 @@ body {
   .content {
     padding: 20px;
   }
-  
+  @media (max-width: 768px) {
+    .menu {
+        width: 50vw; 
+    }
+
+    .menu-toggle {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
