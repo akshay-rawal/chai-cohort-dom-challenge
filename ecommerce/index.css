@@ -48,9 +48,11 @@ body {
     gap: 10px;
     justify-content: flex-end;
     flex: 1;
-    max-width: 400px
+    max-width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
   }
-  
+
   button {
     padding: 5px 10px;
     cursor: pointer;
@@ -83,6 +85,8 @@ body {
     .cartItemDetails {
         justify-content: center;
         max-width: 100%;
+        text-align: center;
+        white-space: normal;
     }
 }
   
